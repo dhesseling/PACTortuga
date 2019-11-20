@@ -2,7 +2,7 @@ package PacTortugas;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class Tortuga {
+public class Tortuga extends Thread{
     
     private String nombre;
     private String dorsal;
@@ -17,6 +17,7 @@ public class Tortuga {
         dorsal = JOptionPane.showInputDialog(null,"Introduzca el dorsal de la tortuga");
     }
     public String getTortuga(){
-        return (" la tortuga: " + nombre + " y su dorsal es el número: " + dorsal + " ha ganado la carrera");
+        return ("\n La tortuga se llama: " + nombre + " y su dorsal es el número: " + dorsal);
     }
+    
 }
